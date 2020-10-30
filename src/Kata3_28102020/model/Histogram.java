@@ -1,14 +1,14 @@
-package Kata3_28102020;
+package Kata3_28102020.model;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-class Histogram<T> {
-    private final Map<T,Integer> map = new HashMap<>();
+public class Histogram<T> {
+    private final Map<T,Integer> map;
     
     public Histogram() {
-        
+        map = new HashMap<>();
     }
     
     public Integer get(T key){
